@@ -1,0 +1,4 @@
+ // To get the right colors for the terminal name.
+ // edit in .zshrc
+
+PS1="%{$fg[yellow]%}%n%{$reset_color%}$fg[magenta]@$reset_color$fg[red]%}%m %{$fg[magenta]%}%~ %{$reset_color%}%% "
