@@ -1,5 +1,5 @@
 return {
-    "github/copilot.vim",
+    "Exafunction/codeium.vim",
     "eandrju/cellular-automaton.nvim",
     "gpanders/editorconfig.nvim",
 }
