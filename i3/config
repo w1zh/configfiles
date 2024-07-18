@@ -96,7 +96,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+c split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -207,7 +207,22 @@ font pango:Fira Code 12
 # gaps
 gaps inner 5
 
+# custom keybinds
+bindsym XF86MonBrightnessUp exec "/usr/local/bin/brightness_control.sh up"
+bindsym XF86MonBrightnessDown exec "/usr/local/bin/brightness_control.sh down"
+
+bindsym $mod+Shift+t exec "~/.config/i3/toggle_touchpad.sh"
+
+# popup window rules
+for_window [class="Brave-browser"] floating disable
+for_window [class="Brave-browser"] resize set 800 600
+for_window [class="Xdg-desktop-portal-gtk"] floating disable
+for_window [class="Xdg-desktop-portal-gtk"] resize set 800 600
+
+# custom runs
 exec --no-startup-id xrandr --dpi 168
 exec feh --bg-fill $HOME/wallhaven-0pgej9.png
 exec --no-startup-id picom
 exec polybar
+exec setxkbmap -layout us,se -option grp:win_space_toggle ctrl:swapcaps
+exec --no-startup-id unclutter
