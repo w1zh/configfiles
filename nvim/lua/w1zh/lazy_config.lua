@@ -15,4 +15,3 @@ require("lazy").setup({
     spec = "w1zh.lazy",
     change_detection = { notify = false }
 })
-
