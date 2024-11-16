@@ -160,17 +160,25 @@ background:  #161320;
     color: #7287fd;
     background:  rgba(23, 23, 23, 0.0);
     opacity: 1;
-    margin: 4px 0px 4px 0px;
-    padding-left: 4px;
-    padding-right: 4px;
+    margin: 2px 0px 2px 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+#bluetooth.connected{
+    color: #40a02b;
+    background: rgba(23, 23, 23, 0.0);
+    opacity: 1;
+    margin: 2px 0px 2px 0px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 #bluetooth.off{
     color: #8c8fa1;
     background:  rgba(23, 23, 23, 0.0);
     opacity: 1;
-    margin: 4px 0px 4px 0px;
-    padding-left: 4px;
-    padding-right: 4px;
+    margin: 2px 0px 2px 0px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 #custom-cliphist{
     color: #E6E7E7;
